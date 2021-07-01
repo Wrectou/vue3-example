@@ -1,5 +1,6 @@
 <template>
   <div class="test-setup">
+    <h4>test-setup</h4>
     <div>count: {{count}}</div><br/>
     <com-button @click="add">+ 100</com-button>
   </div>
@@ -24,7 +25,7 @@ export default {
     const instance = getCurrentInstance()
 
     // 此项操作相当于vue2的 this.utils.div(10, 2)
-    console.log('div: ',instance.appContext.config.globalProperties.utils.div(10,2))
+    // console.log('div: ',instance.appContext.config.globalProperties.utils.div(10,2))
 
     return {
       add,

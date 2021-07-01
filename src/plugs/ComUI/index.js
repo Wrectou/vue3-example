@@ -8,7 +8,7 @@ const componsntsArr = [
 
 export default {
   install: (app, options) => {
-    console.log(app, options);
+    // console.log(app, options);
     componsntsArr.map(comp => {
       app.component(comp.name, comp)
     })
